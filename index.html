@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>To Do App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="animate.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <script src="main.js"></script>
@@ -13,20 +12,22 @@
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
 <body>
-    <section class="hero is-medium is-primary is-bold">
+    <section class="hero is-primary is-bold">
         <div class="hero-body">
             <div class="container has-text-centered">
                 <p class="title">To Do App</p>
                 <p class="subtitle">A simple Todo app</p>
             </div>
-            <div class="field has-addons">
-                <div class="control form">
-                    <input type="text" id="todoInput" class="input" autocomplete="off" placeholder="Enter A Todo">
+            <form action="#" onsubmit="td.todoAdd()">
+                <div class="field has-addons">
+                    <div class="control form">
+                        <input type="text" id="todoInput" class="input" autocomplete="off" placeholder="Enter A Todo">
+                    </div>
+                    <div class="control">
+                        <input type="submit" class="button" value="Enter A ToDo" />
+                    </div>
                 </div>
-                <div class="control">
-                    <a class="button" onclick="todoAdd()">Add a task</a>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
     <section class="list">
