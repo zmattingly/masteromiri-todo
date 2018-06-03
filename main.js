@@ -27,7 +27,6 @@ window.onload = function() {
         if (inputText.length === 0) {
             return false;
         }
-        console.trace();
 
         let newText = document.createTextNode(inputText);
         input.value = "";
